@@ -57,6 +57,13 @@ cd bedrocknpm
 
 3. **รันเว็บไซต์**: เนื่องจากโปรเจกต์นี้เป็นหน้าเว็บแบบ Static ล้วนๆ คุณสามารถเปิดไฟล์ `index.html` ด้วยเว็บบราว์เซอร์ได้ทันที หรือใช้งานร่วมกับส่วนเสริม **Live Server** บน VS Code เพื่อความสะดวกสบาย
 
+---
+
+## 🙏 เครดิต (Credits & Acknowledgments)
+
+โปรเจกต์นี้ได้รับแรงบันดาลใจและมีต้นแบบมาจาก:
+* **[WavePlayz / ScriptApi-NPMs](https://waveplayz.github.io/ScriptApi-NPMs/)** - ขอบคุณสำหรับไอเดียต้นแบบของเว็บไซต์สำหรับการรวบรวมแพ็กเกจ npm ของ Bedrock
+
 <br>
 
 <div align="center">
