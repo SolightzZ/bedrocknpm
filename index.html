@@ -1,40 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Minecraft Bedrock JS API</title>
-<link rel="stylesheet" href="css/main.css">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<body class=loading>
+        <!-- Primary Meta Tags -->
+        <title>Minecraft Bedrock JS API</title>
+        <meta name="title" content="Minecraft Bedrock JS API" />
+        <meta
+            name="description"
+            content="NPM registry browser for Minecraft Bedrock JavaScript API modules. Easily fetch and view the latest game versions and packages." />
 
-<header id=header>
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://solightzz.github.io/bedrocknpm/" />
+        <meta property="og:title" content="Minecraft Bedrock JS API" />
+        <meta
+            property="og:description"
+            content="NPM registry browser for Minecraft Bedrock JavaScript API modules. Easily fetch and view the latest game versions and packages." />
+        <meta
+            property="og:image"
+            content="https://solightzz.github.io/bedrocknpm/img/favicon.png" />
 
-	<div id=info>
-		<div id="main-title" class="title loading">Bedrock JavaScript API</div>
-		<div id="game-version" class="subtitle loading">Minecraft Bedrock version Loading...</div>
-	</div>
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://solightzz.github.io/bedrocknpm/" />
+        <meta property="twitter:title" content="Minecraft Bedrock JS API" />
+        <meta
+            property="twitter:description"
+            content="NPM registry browser for Minecraft Bedrock JavaScript API modules. Easily fetch and view the latest game versions and packages." />
+        <meta
+            property="twitter:image"
+            content="https://solightzz.github.io/bedrocknpm/img/favicon.png" />
 
-	<nav id=actions>
-		<a href="#" onclick="localStorage.length && (localStorage.clear() || popup('Cleared cache')) ">Clear cache</a>
-		<a href="#" onclick="fetchAll()">Fetch all</a>
-	</nav>
+        <!-- Favicon -->
+        <link rel="icon" href="img/favicon.png" type="image/png" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
 
-	<div id=progress-wrap>
-		<div id=progress-bar><span></span></div>
-		<div id=progress-text>0 / 9</div>
-	</div>
+    <body class="loading">
+        <header id="header">
+            <div id="info">
+                <div id="main-title" class="title loading">Bedrock JavaScript API</div>
+                <div id="game-version" class="subtitle loading">
+                    Minecraft Bedrock version Loading...
+                </div>
+            </div>
 
-</header>
+            <nav id="actions">
+                <a
+                    href="#"
+                    onclick="
+                        localStorage.length && (localStorage.clear() || popup('Cleared cache'))
+                    "
+                    >Clear cache</a
+                >
+                <a href="#" onclick="fetchAll()">Fetch all</a>
+            </nav>
 
-<main>
-	<div id=moduleElms></div>
-</main>
+            <div id="progress-wrap">
+                <div id="progress-bar"><span></span></div>
+                <div id="progress-text">0 / 9</div>
+            </div>
+        </header>
 
-<footer id=footer>
-	<span>Bedrock JavaScript API &mdash; npm registry browser</span>
-</footer>
+        <main>
+            <div id="moduleElms"></div>
+        </main>
 
-<script src="js/main.js"></script>
-</body>
+        <footer id="footer">
+            <span>Bedrock JavaScript API &mdash; npm registry browser</span>
+        </footer>
+
+        <script src="js/main.js"></script>
+    </body>
 </html>
