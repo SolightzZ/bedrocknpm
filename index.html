@@ -31,43 +31,53 @@
 
         <!-- Favicon -->
         <link rel="icon" href="img/favicon.png" type="image/png" />
+        
+        <!-- Bootstrap 5 CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
         <link rel="stylesheet" href="css/main.css" />
     </head>
 
     <body class="loading">
-        <header id="header">
-            <div id="info">
-                <div id="main-title" class="title loading">Bedrock JavaScript API</div>
-                <div id="game-version" class="subtitle loading">
+        <div class="container d-flex flex-column justify-content-center align-items-center py-4 py-md-5 gap-3 gap-md-4">
+        <header id="header" class="col-12 col-md-10 col-lg-8 p-3 p-md-4 p-lg-5">
+            <div id="info" class="d-flex flex-column align-items-center gap-1 gap-md-2">
+                <div id="main-title" class="title loading text-center fs-3 fs-md-2 fs-lg-1">Bedrock JavaScript API</div>
+                <div id="game-version" class="subtitle loading text-center mt-2 fs-6 fs-md-5">
                     Minecraft Bedrock version Loading...
                 </div>
             </div>
 
-            <nav id="actions">
-                <a
-                    href="#"
-                    onclick="
-                        localStorage.length && (localStorage.clear() || popup('Cleared cache'))
-                    "
-                    >Clear cache</a
-                >
-                <a href="#" onclick="fetchAll()">Fetch all</a>
-            </nav>
+                <nav id="actions" class="d-flex justify-content-center flex-wrap gap-2 gap-md-3 mt-3 mt-md-4">
+                    <a
+                        href="#"
+                        class="px-2 px-md-3 py-1 fs-6 fs-md-5"
+                        onclick="
+                            localStorage.length && (localStorage.clear() || popup('Cleared cache'))
+                        "
+                        >Clear cache</a
+                    >
+                    <a href="#" class="px-2 px-md-3 py-1 fs-6 fs-md-5" onclick="fetchAll()">Fetch all</a>
+                </nav>
 
-            <div id="progress-wrap">
-                <div id="progress-bar"><span></span></div>
-                <div id="progress-text">0 / 9</div>
-            </div>
+                <div id="progress-wrap" class="d-flex align-items-center gap-2 gap-md-3 mt-3 mt-md-4 w-100 px-2 py-1 px-md-3 py-md-2">
+                    <div id="progress-bar" class="flex-grow-1"><span></span></div>
+                    <div id="progress-text" class="fs-6 fs-md-7">0 / 9</div>
+                </div>
         </header>
 
-        <main>
-            <div id="moduleElms"></div>
-        </main>
+            <main class="col-12 col-md-10 col-lg-8 d-flex justify-content-center mt-3 mt-md-4">
+                <div id="moduleElms" class="w-100 d-flex flex-column gap-3 gap-md-4"></div>
+            </main>
 
-        <footer id="footer">
+        <footer id="footer" class="w-100 text-center mt-3">
             <span>Bedrock JavaScript API &mdash; npm registry browser</span>
         </footer>
+        
+        </div>
 
+        <!-- Bootstrap 5 JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

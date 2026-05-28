@@ -10,9 +10,9 @@ moduleNames.map((moduleName) => {
     let moduleElm = elm();
     moduleElm.setAttribute('id', moduleName);
     let { classList } = moduleElm;
-    classList.add('loading');
+    classList.add('loading', 'module-card', 'd-flex', 'flex-column', 'p-3', 'p-md-4', 'w-100');
     let head = elm('div');
-    head.className = 'module-name';
+    head.className = 'module-name d-flex align-items-center flex-wrap gap-2 fs-5 fs-md-4';
     head.style.cursor = 'pointer';
 
     head.innerText = moduleName;
@@ -44,7 +44,7 @@ moduleNames.map((moduleName) => {
         let { modified, versions } = json;
 
         let modifiedElm = elm('div');
-        modifiedElm.className = 'update-info';
+        modifiedElm.className = 'update-info text-nowrap px-2 py-1 fs-6 fs-md-7';
         modifiedElm.innerText = 'Update ' + readableDate(new Date(modified));
         head.append(modifiedElm);
 

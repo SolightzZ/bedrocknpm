@@ -1,4 +1,8 @@
 .popup-box {
+	background: #11243a;
+	border: 3px solid #1e3a5f;
+	box-shadow: 5px 5px #000;
+	color: #b8d4e8;
 	animation: slideIn 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
 

@@ -1,18 +1,8 @@
 function popup (content, head) {
 	if (! popup.stack) {
 		let a = elm( "div" )
-		
-		Object.assign( a.style, {
-			position: "fixed",
-			top: 0,
-			right: 0,
-			display: "flex",
-			flexDirection: "column",
-			alignItems: "end",
-			gap: "1em",
-			zIndex: 2,
-			padding: "2.5vw"
-		})
+		a.className = "position-fixed top-0 end-0 d-flex flex-column align-items-end gap-2 gap-md-3 p-3 p-md-4";
+		a.style.zIndex = "1055";
 		
 		popup.stack = a
 		
@@ -20,14 +10,7 @@ function popup (content, head) {
 	}
 	
 	let b = elm( "div" )
-	b.className = "popup-box"
-	Object.assign( b.style, {
-		background: "#11243a",
-		border: "3px solid #1e3a5f",
-		padding: ".75em 1em",
-		boxShadow: "5px 5px #000",
-		color: "#b8d4e8",
-	})
+	b.className = "popup-box px-3 py-2 px-md-4 py-md-3 fs-6 fs-md-5";
 	b.innerHTML = (head ? "<small>"+ head +"</small><br>" : "") + content
 	
 	popup.stack.append(b)
