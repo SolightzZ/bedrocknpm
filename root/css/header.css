@@ -1,0 +1,99 @@
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25em;
+    background: #11243a;
+    border: 3px solid #1e3a5f;
+    padding: 1.5em 2em;
+    width: 75%;
+    box-shadow: 5px 5px #000;
+}
+
+#info {
+    font-size: 1.4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25em;
+}
+
+#info .subtitle {
+    font-family: 'Minecraft', sans-serif;
+    font-size: 0.7em;
+    color: #b8d4e8;
+    background: #0d1f33;
+    border: 3px solid #1e3a5f;
+    padding: 0.35em 0.75em;
+    box-shadow: 4px 4px #000;
+}
+
+#info .title {
+    font-family: 'Minecraft', sans-serif;
+    font-size: 1.8em;
+    font-weight: normal;
+    letter-spacing: 0.04em;
+    color: #b8d4e8;
+}
+
+#actions {
+    display: flex;
+    gap: 1.5em;
+}
+
+#actions a {
+    color: #b8d4e8;
+    font-size: 0.9em;
+    padding: 0.35em 0.9em;
+    border: 3px solid #1e3a5f;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 5px 5px #000;
+    transition: all 0.2s ease;
+}
+
+#actions a:hover {
+    border-color: #4a9bd9;
+    color: #8fcbff;
+    box-shadow: 7px 7px #000;
+    transform: translate(-2px, -2px);
+}
+
+#actions a:active {
+    box-shadow: 2px 2px #000;
+    transform: translate(3px, 3px);
+}
+
+#progress-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+    width: 100%;
+    background: #11243a;
+    border: 3px solid #1e3a5f;
+    padding: 0.5em 0.75em;
+    box-shadow: 5px 5px #000;
+}
+
+#progress-bar {
+    flex: 1;
+    height: 6px;
+    background: #1a3350;
+    border: 2px solid #1e3a5f;
+    overflow: hidden;
+}
+
+#progress-bar span {
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: #4a9bd9;
+    transition: width 300ms;
+}
+
+#progress-text {
+    font-size: 0.8em;
+    color: #7a9ec7;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}

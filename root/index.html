@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minecraft Bedrock JS API</title>
+<link rel="stylesheet" href="css/main.css">
+
+<body class=loading>
+
+<header id=header>
+
+	<div id=info>
+		<div id="main-title" class="title loading">Bedrock JavaScript API</div>
+		<div id="game-version" class="subtitle loading">Minecraft Bedrock version Loading...</div>
+	</div>
+
+	<nav id=actions>
+		<a href="#" onclick="localStorage.length && (localStorage.clear() || popup('Cleared cache')) ">Clear cache</a>
+		<a href="#" onclick="fetchAll()">Fetch all</a>
+	</nav>
+
+	<div id=progress-wrap>
+		<div id=progress-bar><span></span></div>
+		<div id=progress-text>0 / 9</div>
+	</div>
+
+</header>
+
+<main>
+	<div id=moduleElms></div>
+</main>
+
+<footer id=footer>
+	<span>Bedrock JavaScript API &mdash; npm registry browser</span>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+@keyframes shimmer {
+	0% { background-position: -400px 0; }
+	100% { background-position: 400px 0; }
+}
+
+#moduleElms > .loading {
+	pointer-events: none;
+	position: relative;
+	min-height: 200px;
+}
+
+#moduleElms > .loading .module-name {
+	color: transparent !important;
+	background: linear-gradient(90deg, #1a3350 25%, #264a70 50%, #1a3350 75%);
+	background-size: 400px 100%;
+	animation: shimmer 1.5s ease-in-out infinite;
+	border-radius: 0;
+	height: 1.4em;
+	width: 65%;
+	margin-bottom: .75em;
+	border: none !important;
+	box-shadow: none !important;
+	padding: .5em .75em !important;
+}
+
+#moduleElms > .loading .module-name .update-info {
+	display: none;
+}
+
+#moduleElms > .loading::before {
+	content: "";
+	display: block;
+	margin: .75em 0;
+	height: 1.8em;
+	background:
+		linear-gradient(90deg, #1a3350 25%, #264a70 50%, #1a3350 75%) left / 25% 1.2em no-repeat,
+		linear-gradient(90deg, #1a3350 25%, #264a70 50%, #1a3350 75%) right / 12% 1.2em no-repeat;
+	background-size: 400px 100%, 400px 100%;
+	animation: shimmer 1.5s ease-in-out infinite;
+}
+
+#moduleElms > .loading::after {
+	content: "";
+	display: block;
+	background: linear-gradient(90deg, #1a3350 25%, #264a70 50%, #1a3350 75%);
+	background-size: 400px 100%;
+	animation: shimmer 1.5s ease-in-out infinite;
+	height: 2em;
+	width: 75%;
+	margin-top: .5em;
+}
+
+body.loading #actions a {
+	color: transparent !important;
+	background: linear-gradient(90deg, #1a3350 25%, #264a70 50%, #1a3350 75%);
+	background-size: 400px 100%;
+	animation: shimmer 1.5s ease-in-out infinite;
+	border-color: #1a3350;
+	pointer-events: none;
+}
+
+body.loading #progress-text {
+	color: transparent !important;
+	background: linear-gradient(90deg, #1a3350 25%, #264a70 50%, #1a3350 75%);
+	background-size: 400px 100%;
+	animation: shimmer 1.5s ease-in-out infinite;
+	display: inline-block;
+	min-width: 4em;
+	height: 1em;
+}
+
+body.loading #progress-bar {
+	background: transparent;
+	border-color: #1a3350;
+}
+
+body.loading #progress-bar span {
+	background: linear-gradient(90deg, #1a3350 25%, #264a70 50%, #1a3350 75%);
+	background-size: 400px 100%;
+	animation: shimmer 1.5s ease-in-out infinite;
+	width: 100% !important;
+}
+
+body.loading #footer,
+body.loading #footer * {
+	animation: none !important;
+	background: transparent !important;
+	color: #5a7a9a !important;
+}
+
+#info .subtitle.loading {
+	color: transparent !important;
+	background: linear-gradient(90deg, #1a3350 25%, #264a70 50%, #1a3350 75%);
+	background-size: 400px 100%;
+	animation: shimmer 1.5s ease-in-out infinite;
+	border-radius: 0;
+	text-shadow: none !important;
+	border-color: #1a3350 !important;
+	box-shadow: 5px 5px #000;
+}
+
+#info .title.loading {
+	color: transparent !important;
+	background: linear-gradient(90deg, #1a3350 25%, #264a70 50%, #1a3350 75%);
+	background-size: 400px 100%;
+	animation: shimmer 1.5s ease-in-out infinite;
+	border-radius: 0;
+}

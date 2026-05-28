@@ -1,0 +1,48 @@
+#moduleElms > div > .npm-text {
+	color: #b8d4e8;
+	font-size: 1.05em;
+	font-family: monospace;
+	background: #0d1f33;
+	border: 3px solid #1e3a5f;
+	padding: .35em .75em;
+	margin-top: .5em;
+	display: inline-block;
+	width: fit-content;
+	box-shadow: 5px 5px #000;
+	transition: all 0.2s ease;
+	cursor: pointer;
+}
+
+#moduleElms > div > .npm-text:hover {
+	box-shadow: 7px 7px #000;
+	transform: translate(-2px, -2px);
+}
+
+#moduleElms > div > .npm-text:active {
+	box-shadow: 2px 2px #000;
+	transform: translate(3px, 3px);
+}
+
+#moduleElms > div > div .download-btn {
+	font-size: .85em;
+	color: #b8d4e8;
+	text-decoration: none;
+	font-weight: 500;
+	padding: .25em .75em;
+	border: 3px solid #1e3a5f;
+	cursor: pointer;
+	box-shadow: 5px 5px #000;
+	transition: all 0.2s ease;
+}
+
+#moduleElms > div > div .download-btn:hover {
+	border-color: #4a9bd9;
+	color: #8fcbff;
+	box-shadow: 7px 7px #000;
+	transform: translate(-2px, -2px);
+}
+
+#moduleElms > div > div .download-btn:active {
+	box-shadow: 2px 2px #000;
+	transform: translate(3px, 3px);
+}

@@ -1,0 +1,64 @@
+main {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#moduleElms {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.25em;
+	width: 100%;
+	max-width: 52em;
+}
+
+#moduleElms > div {
+	display: flex;
+	flex-direction: column;
+	background: #11243a;
+	border: 3px solid #1e3a5f;
+	padding: 1.5em 2em;
+	width: 100%;
+	cursor: pointer;
+	box-shadow: 5px 5px #000;
+}
+
+#moduleElms > div:hover {
+	border-color: #4a9bd9;
+}
+
+#moduleElms > div > div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: .75em;
+}
+
+#moduleElms > div > div .label {
+	font-weight: 600;
+}
+
+#moduleElms > div > .module-name {
+	font-size: 1.2em;
+	color: #b8d4e8;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	gap: .5em;
+}
+
+#moduleElms > div > .module-name .update-info {
+	font-weight: 400;
+	font-size: .6em;
+	color: #7ac7f5;
+	background: #0d1f33;
+	border: 3px solid #1e3a5f;
+	padding: .15em .5em;
+	box-shadow: 5px 5px #000;
+}
+
+.label-0 { color: #5ae0a0; }
+.label-1 { color: #f5c842; }
+.label-2 { color: #7ac7f5; }
+.label-3 { color: #c084fc; }

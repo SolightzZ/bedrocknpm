@@ -1,0 +1,29 @@
+.popup-box {
+	animation: slideIn 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.popup-box.out {
+	animation: slideOut 0.3s ease forwards;
+}
+
+@keyframes slideIn {
+	from {
+		opacity: 0;
+		transform: translateX(120%);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideOut {
+	from {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	to {
+		opacity: 0;
+		transform: translateX(120%);
+	}
+}
